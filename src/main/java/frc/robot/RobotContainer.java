@@ -7,7 +7,6 @@ package frc.robot;
 import frc.robot.Constants.OperatorConstants;
 import frc.robot.commands.Autos;
 import frc.robot.commands.SetArmTargetCommand;
-import frc.robot.commands.ArmControllerCommand;
 import frc.robot.subsystems.ArmSubsystem;
 import frc.robot.subsystems.ArmSubsystem.ArmAngle;
 import frc.robot.subsystems.Controls;
@@ -28,9 +27,6 @@ public class RobotContainer {
   private final Controls m_controlsSubsystem = new Controls();
 
   private ShuffleBoard m_shuffleboard = null;
-
-  private final CommandXboxController m_driverController =
-      new CommandXboxController(OperatorConstants.kDriverControllerPort);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
